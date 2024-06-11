@@ -1,0 +1,16 @@
+<% include ./partials/header.ejs %>
+  <div class="w-full h-screen bg-[url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] flex items-center justify-center">
+    <div class="w-[25vw] h-[50vh] bg-white px-20 py-10 rounded-[30px]">
+      <div class="flex items-center justify-center">
+      <img  class="h-11 w-11 mb-2" src="https://static.vecteezy.com/system/resources/previews/023/741/202/original/pinterest-logo-icon-social-media-icon-free-png.png" alt="Your Image">
+    </div>
+      <h1 class="text-3xl text-center font-semibold tracking-tighter leading-none text-zinc-600 capitalize">Welcome to pinterest</h1>
+      <form action="/login" method="post">
+        <input  class=" border-2 rouned-md mt-2 w-full px-3 py-2"  type="text" name="username" placeholder="username">
+        <input  class=" border-2 rouned-md mt-2 w-full px-3 py-2"  type="password" name="password" placeholder="password">
+        <input  class=" border-2 rounded-full mt-2 w-full px-3 py-2 bg-red-600 text-white rounded-full"  type="submit" value="login">
+      </form>
+      <a class="inline-block mt-4 text-sm font-semibold text-zinc-700 text-center w-full" href="/register">Dont have an account ?</a>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>  

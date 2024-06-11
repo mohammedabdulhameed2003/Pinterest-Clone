@@ -1,0 +1,37 @@
+<% include ./partials/header.ejs %>
+  <div class="w-full min-h-screen bg-[url(https://images.unsplash.com/photo-1594897030264-ab7d87efc473?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] pt-1">
+    <form id="uploadform" hidden action="/fileupload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+    </form>
+    <div class="profiledetails flex flex-col items-center mt-20">
+        <div class="relative">
+            <span id="uploadicon" class="w-8 h-8 absolute bottom-0 right-0 rounded-full flex items-center justify-center bg-zinc-200">
+            <i class="text-zinc-800 ri-pencil-fill"></i>
+            </span>
+            <div class="w-48 h-48 bg-zinc-200 rounded-full overflow-hidden">
+                <img class="w-full h-full object-cover" src="/images/uploads/<%= user.profileImage %>">
+            </div>
+        </div>
+        <h1 class="text-2xl font-semibold mt-5 text-white"><%= user.name %></h1>
+        <h3 class="text-md text-white">@<%= user.username %></h3>
+        <a href="/add" class="px-10 py-2 rounded-lg bg-red-600 text-xs font-semibold mt-7 text-white">Add New Post</a>
+    </div>
+    <div class="cards flex flex-wrap gap-10 px-10 mt-10">
+        <div>
+            <div class="w-52 h-40 bg-zinc-200 rounded-lg overflow-hidden">
+                <img class="w-full h-full object-cover" src="/images/uploads/<%= user?.posts[0]?.image %>">
+            </div>
+            <a href="/show/posts" class="text-xl font-semibold mt-3 text-white">Your uploaded pins</a>
+            <h5 class="text-sm font-medium opacity-60 text-white"><%= user.posts.length %> Pins</h5>
+        </div>
+    </div>
+  </div>
+  <script>
+    document.querySelector("#uploadicon").addEventListener("click", function() {
+        document.querySelector("#uploadform input").click();
+    });
+    document.querySelector("#uploadform input").addEventListener("change", function() {
+        document.querySelector("#uploadform").submit();
+    });
+  </script>
+<% include ./partials/footer.ejs %>

@@ -1,0 +1,14 @@
+<% include ./partials/header.ejs %>
+  <div class="w-full min-h-screen bg-[url(https://images.unsplash.com/photo-1594897030264-ab7d87efc473?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] px-10 py-8 text-black">
+    <div class="cards flex flex-wrap gap-10">
+        <% user.posts.forEach(function(elem){ %>
+            <div class="card w-52">
+                <div class="object-cover bg-sky-200 rounded-lg overflow-hidden">
+                    <img src="/images/uploads/<%= elem.image %>">
+                </div>
+                <h5 class="mt-2 text-sm text-white"><%= elem.title %></h5>
+            </div>
+       <% }) %>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>
