@@ -5,10 +5,10 @@
 # login page
 ![Screenshot (48)](https://github.com/mohammedabdulhameed2003/Pinterest-clone/assets/135050083/80754117-b95d-4da4-bef5-d4a1212304db)
 
-# Register page
+# register page
 ![Screenshot (49)](https://github.com/mohammedabdulhameed2003/Pinterest-clone/assets/135050083/cc124e46-2783-4171-92b0-a4f3b9ba5116)
 
-# Profile page
+# profile page
 ![Screenshot (43)](https://github.com/mohammedabdulhameed2003/Pinterest-clone/assets/135050083/aebebc75-7ee1-4909-b7a9-63bceb31c7bf)
 
 # add page
