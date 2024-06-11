@@ -1,3 +1,5 @@
+# This project is a Pinterest clone, a web application that replicates the functionalities of Pinterest. It is designed to allow users to register, log in, create posts, view a feed of posts, and manage their profiles. The project showcases a user-friendly interface and a design to enhance the user experience across different devices.
+
 # To run type npx nodemon in terminal 
 
 # login page
