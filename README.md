@@ -3,10 +3,10 @@
  To run type npx nodemon in terminal 
 
 # login page
-![Screenshot (48)](https://github.com/mohammedabdulhameed2003/Pinterest-clone/assets/135050083/80754117-b95d-4da4-bef5-d4a1212304db)
+![Screenshot (50)](https://github.com/mohammedabdulhameed2003/Pinterest-clone/assets/135050083/02748b27-890f-402b-8057-ccc2b0c949fe)
 
 # register page
-![Screenshot (49)](https://github.com/mohammedabdulhameed2003/Pinterest-clone/assets/135050083/cc124e46-2783-4171-92b0-a4f3b9ba5116)
+![Screenshot (51)](https://github.com/mohammedabdulhameed2003/Pinterest-clone/assets/135050083/dc33b1f0-4633-4e65-a3b2-2edb7db399de)
 
 # profile page
 ![Screenshot (43)](https://github.com/mohammedabdulhameed2003/Pinterest-clone/assets/135050083/aebebc75-7ee1-4909-b7a9-63bceb31c7bf)
